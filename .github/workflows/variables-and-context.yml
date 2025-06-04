@@ -33,6 +33,10 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: echo "$GITHUB_CONTEXT"
+      - name: Print my job context
+        env:
+          MY_JOB_CONTEXT: Summary123
+        run: echo "$MY_JOB_CONTEXT"
       
   #step/job output variables
   job2:
